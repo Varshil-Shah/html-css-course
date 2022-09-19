@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  position: relative;
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 850px;
+  border: 5px solid #000;
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  padding: 0 10px 10px 10px;
+}
+
+.product-image {
+  width: 250px;
+  height: 250px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shipping {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(67, 67, 67);
+  text-transform: uppercase;
+}
+
+.product-description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.more-info {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(100, 20, 89);
+}
+
+.details-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.details-list {
+  list-style: square;
+}
+
+.details-list li {
+  font-size: 17px;
+}
+
+.add-cart {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.sale {
+  position: absolute;
+  top: -25px;
+  left: -50px;
+  font-size: 18px;
+  background-color: rgb(247, 20, 66);
+  color: #fff;
+  padding: 5px 20px;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.product-price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* FLEX */
+/* .row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.product-info {
+  padding: 10px 5px;
+  flex: 1;
+}
+
+.product-details {
+  padding: 10px;
+  flex: 1;
+} */
+
+/* CSS GRID */
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.product-title {
+  grid-column: 1 / -1;
+}
+
+.add-cart {
+  grid-column: 1 / -1;
+}
